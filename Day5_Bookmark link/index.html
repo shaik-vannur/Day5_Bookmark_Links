@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example for bookmark link</title>
+  </head>
+  <body>
+    <a href="./BookmarkLink.html">    <h1>Penalty imposition on unmasked people using deep learning</h1>
+    </a>
+    <h2 id="abstract">ABSTRACT</h2>
+    <p>
+      COVID-19 pandemic has caused a worldwide loss of lives of many people.
+      This disease transmission happens mainly through the water or any sort of
+      droplets transmission from nose, mouth of one person to other. Masking
+      one’s self & preventing is the only way to escape from this
+      life-threatening disease. This model processes the images of various
+      qualities and dimensions. CNN, open CV, Tensor Flow is used to detect the
+      mask on the face of the person. Super resolution is performed, in order to
+      enhance the quality of the images from low to high. Database is maintained
+      to match and compare the faces of the images captured. When a person’s
+      image is captured and identified without mask, it leads to penalty
+      imposition. Then warning is sent to the person’s mobile and mail address
+      signifying that mask is not available. Even if the person’s nose and mouth
+      are not completely covered, a message is issued, stating a warning to the
+      specific individual. If the person is identified without mask more than
+      once, then penalty is imposed based on the number of the person. A web
+      page is deployed to search the status of the penalty of the certain
+      individual.
+    </p>
+    <h2 id="introduction">INTRODUCTION</h2>
+    <p>
+      In December 2019, a contagious disease named COVID-19(China Originated
+      Virus in December - 2019) has been rise across the world and was declared
+      as a pandemic, which caused the death of millions of people. Scientists
+      across the world have struggled a lot and tried to find out the ways and
+      solutions to avoid the pandemic. There by, they have found out that water
+      droplets through their mouth and nose are the main mode of the
+      transmission of the virus. Scientists then stated that mask usage is the
+      major mode of preventing the spread f the virus. Therefore many humans
+      across the world have adapted themselves with the usage, but still there
+      are some kinds of people who were careless and themselves and the
+      society.ML is a broad category of computer systems that can learn and
+      adapt without human intervention by using algorithms that analyze data,
+      discover patterns and draw inferences from those patterns. ML is a subset
+      of artificial intelligence. Deep learning is one subset of machine
+      learning, while neural networks are a subset of deep learning. The more
+      data available to use, the more likely deep learning will give the better
+      solution. As the data scales, deep learning becomes much more efficient.
+      In a world where available data does nothing but scale week after week and
+      year after year, it’s likely the adoption of deep learning will continue
+      to escalate and increase enormously. Deep learning algorithms analyze
+      input data, find patterns in the data and then predict the output data.
+      While it is the algorithm itself that does that, its effectiveness depends
+      on both the quality of the data and how the data science team has tuned
+      the algorithm's hyper parameters.
+    </p>
+    <p>
+      This project deals with the identifying the mask on the face for the
+      people, whether the individual or group of people are wearing or not. This
+      research can be processed by using multiple types of machine learning
+      algorithms. The algorithm is trained by using various kinds of images in
+      different perspective and various positions. If any certain individual or
+      group of people are not following the mask protocol completely, their
+      image is captured and then face recognition of the particular person
+      happens. The captured image is then compared with the images which are
+      available in the database. Hence, if the data of the individual is
+      available in the database, a notification stating that a penalty is being
+      imposed against them for not following the COVID-19 protocols is sent to
+      the person’s mobile and mail address.
+    </p>
+    <h2 id="survey">LITERATURE SURVEY</h2>
+    <p>
+      <strong
+        >1.Sethi, S., Kathuria, M., &Kaushik, T. (2021). Face mask detection
+        using deep learning: An approach to reduce risk of Coronavirus spread.
+        Journal of biomedical informatics, 120, 103848.</strong
+      >
+    </p>
+    <p>
+      The main aim of researcher here is to achieve low inference time and high
+      accuracy. The concept of transfer learning, along with Resnet50 are
+      described in the paper.In this paper, researcher conducted the experiment
+      with three different kinds of models. Namely they areResNet50, AlexNet and
+      MobileNet. R-CNN is applied at the initial stager and further SVM is
+      processed.SPNN a combination of R-CNN with an SPP layer to compute the
+      entire image in a single-shot resulted in the increase of speed.
+      Transferlearning has become an added advantage here. Cropped ROI, affine
+      transformation are used in this paper because there can be faces of
+      different sizes and Positions.
+    </p>
+    <p>
+      <strong
+        >2.Ogla, R., Saeid, A. A., & Shaker, S. H. (2022). Technique for
+        recognizing faces using a hybrid of moments and a local binary pattern
+        histogram. International Journal of Electrical and Computer Engineering
+        (IJECE), 12(3), 2571-2581</strong
+      >
+    </p>
+    <p>
+      The technique used in this paper are hybrid method of moments and local
+      binary patterns histogram (LBPH). LBPH is possible only when the image is
+      available in the grayscale format. It is not possible when the image is in
+      the RGB format. It is performed for 3 x 3 matrix. Such that when the
+      result is greater than zero, the value turns one else it exists as zero.
+      Histogram is plotted based on these binary values.Three fidelity criteria
+      mean squared error (MSE), Chi-Squared, and peak signal-to-noise ratio
+      (PSNR) are used in this paper to measure the information loss. As per the
+      researcher, long histograms in LBPH is slowing down the process. To reduce
+      this, Symmetric Centre LBP is proposed, through which values are compare
+      with the centre value only, where it can reduce the number of the
+      comparisons.
+    </p>
+
+    <h2 id="methodology">METHODOLOGY</h2>
+    <p>
+      Convolutional neural network (CNN) is a artificial neural network that is
+      dominant in various computer vision tasks and in different interests. It
+      can be automatically select feature through backpropagation by using
+      different layers called convolution layers, pooling layers and fully
+      connected layers, it is designed to be make the selection. CNN can be
+      applied to small datasets and can resolve overfitting. As above mentioned
+      it as three types of layers convolution, pooling and fully connected
+      layers. The first two, convolution and pooling layers, perform feature
+      extraction and the third a fully connected layer maps the extracted
+      features into final output named as classification. CNNs are highly
+      efficient for image processing, that can a feature may occur anywhere in
+      the image. This can be optimized by using optimization algorithm called
+      backpropagation and gradient descent. Pooling and convolution operations
+      can also be performed in 2D and 3D too. CNN is combined to use the both
+      linear and non-linear operations these can also be called as convolution
+      and activation operations. It is divided as a feature map as a sum up of
+      input. Pooling layer has max pooling operation, which extracts patches
+      from feature maps which can be called as downsamples to make discarding
+      the all other values for dimensions of feature maps to be remains
+      unchanged. Fully connected layer is formally flattened that can be used in
+      1D. this layer can also be called as dense layer which is connected to
+      every output by their given weights. It is the output layer, once the
+      operations were done by convolution and pooling layers, the output is
+      mapped by a subset of this layer as the output of the network and every
+      class is undergoes classification tasks. After this, the training a
+      network is to find the kernels in convolution layers and weights in fully
+      connected layer. This is used to differentiate the predictions and truth
+      table on training dataset.
+    </p>
+    <h2 id="implementation">STEPS OF IMPLEMENTATION</h2>
+    <p><strong>1. Face Mask Detection :</strong></p>
+    <p>
+      In this module, face mask detection is done using Keras, Opencv,
+      Tensorflow, MobileNetV2 and transfer learning methods in CNN. • Here 3828
+      images of people without mask and 3725 images of people with the masks are
+      provided to train the model. • The main reason behind using MobileNetV2
+      classifier is that, it is easy to deploy into embedded systems like
+      Raspberry Pi, Google Coral etc. In this module, face mask detection is
+      done using Keras, Opencv, Tensorflow, MobileNetV2 and transfer learning
+      methods in CNN. • Here 3828 images of people without mask and 3725 images
+      of people with the masks are provided to train the model. • The main
+      reason behind using MobileNetV2 classifier is that, it is easy to deploy
+      into embedded systems like Raspberry Pi, Google Coral etc.In this module,
+      face mask detection is done using Keras, Opencv, Tensorflow, MobileNetV2
+      and transfer learning methods in CNN. • Here 3828 images of people without
+      mask and 3725 images of people with the masks are provided to train the
+      model. • The main reason behind using MobileNetV2 classifier is that, it
+      is easy to deploy into embedded systems like Raspberry Pi, Google Coral
+      etc.
+    </p>
+    <div>2. Face Recognition :-    </div>
+    <p>In this module, the detected and processed face is compared to the database of 
+        known
+         faces , in order to recognize the person uniquely.
+        • Siamese network, which is a special kind of neural network is used for 
+        recognition
+         here.
+        • The main objective of siamese network is to understand whether the two faces 
+        are
+         similar or dissimilar</p>
+    <h2 id="results">RESULTS AND DISCUSSION</h2>
+    <p>
+      Face mask detection is processed with pretrained model of CNN called as
+      MobileNetV2 over 5000 images of masked and 5000 images of unmasked
+      people.Hence, 20 epochs are proceeded to train the model.The accuracy of
+      this model result is about 98.74%. Face recognition is processed with
+      Siamese network, there would be no training, as it means the facial
+      similarities based on distance between edges of faces.The tests have been
+      processed with multiple thresholds ranging from 0.2 to 0.7. But the
+      threshold 0.5 has given best results of it.The accuracy here would be 100%
+      , when face image is available in the database, else the accuracy is
+      85%.Face mask detection is processed with pretrained model of CNN called
+      as MobileNetV2 over 5000 images of masked and 5000 images of unmasked
+      people.Hence, 20 epochs are proceeded to train the model.The accuracy of
+      this model result is about 98.74%. Face recognition is processed with
+      Siamese network, there would be no training, as it means the facial
+      similarities based on distance between edges of faces.The tests have been
+      processed with multiple thresholds ranging from 0.2 to 0.7. But the
+      threshold 0.5 has given best results of it.The accuracy here would be 100%
+      , when face image is available in the database, else the accuracy is 85%.
+    </p>
+  </body>
+</html>
